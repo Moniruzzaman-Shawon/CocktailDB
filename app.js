@@ -50,9 +50,9 @@ const handleAddToCart = (drinkName, img, price) => {
     if (currentItems >= MAX_CART_ITEMS) {
         alertContainer.innerHTML = `
       <div class="alert alert-danger" role="alert">
-        You can add only up to ${MAX_CART_ITEMS} items in the cart.
+        You can add only up to ${MAX_CART_ITEMS} items in the cart. 
       </div>
-    `;
+    `; //trying bootstrap style
         setTimeout(() => (alertContainer.innerHTML = ''), 3000);
         return;
     }
