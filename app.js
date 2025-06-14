@@ -63,7 +63,7 @@ const handleAddToCart = (drinkName, img, price) => {
     <img src="${img}" alt="${drinkName}" width="50" height="50" class="rounded" />
     <div>
       <p class="mb-0">${drinkName}</p>
-      <p class="mb-0 text-muted">৳${price}</p>
+      <p class="mb-0 text-muted">$${price}</p>
     </div>
   `;
     cart.appendChild(div);
@@ -73,7 +73,7 @@ const handleAddToCart = (drinkName, img, price) => {
 };
 
 const updateTotal = () => {
-    document.getElementById('total-container').innerText = `Total: ৳${totalPrice}`;
+    document.getElementById('total-container').innerText = `Total: $${totalPrice}`;
 };
 
 const showDetails = (drinkId) => {
